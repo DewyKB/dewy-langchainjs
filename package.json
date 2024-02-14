@@ -1,5 +1,5 @@
 {
-  "name": "dewy_langchain",
+  "name": "dewy-langchain",
   "version": "0.0.2",
   "description": "Langchain integrations for Dewy",
   "private": false,
