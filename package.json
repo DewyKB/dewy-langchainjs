@@ -1,0 +1,30 @@
+{
+  "name": "dewy_langchain",
+  "version": "0.0.1",
+  "description": "Langchain integrations for Dewy",
+  "private": false,
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "dewy_ts": "^0.1",
+    "langchain": "^0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DewyKB/dewy_langchain.git"
+  },
+  "author": "Ryan Michael <kerinin@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/DewyKB/dewy-ts/issues"
+  },
+  "homepage": "https://github.com/DewyKB/dewy-ts#readme"
+}
