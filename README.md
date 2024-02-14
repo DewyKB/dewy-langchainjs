@@ -11,8 +11,8 @@ import { RunnablePassthrough, RunnableSequence } from "@langchain/core/runnables
 import { formatDocumentsAsString } from "langchain/util/document";
 import { StringOutputParser } from "@langchain/core/output_parsers";
 
-import { Dewy } from 'dewy_ts'; 
-import { DewyRetriever } from 'dewy_langchain'; 
+import { Dewy } from 'dewy-ts'; 
+import { DewyRetriever } from 'dewy-langchain'; 
 
 const model = new ChatOpenAI({
     openAIApiKey: process.env.OPENAI_API_KEY

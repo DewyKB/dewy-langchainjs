@@ -4,7 +4,7 @@ import {
   } from "@langchain/core/retrievers";
   import type { CallbackManagerForRetrieverRun } from "@langchain/core/callbacks/manager";
   import { Document } from "@langchain/core/documents";
-  import { Dewy, TextResult } from 'dewy_ts'; 
+  import { Dewy, TextResult } from 'dewy-ts'; 
   
   export interface DewyRetrieverInput extends BaseRetrieverInput {
     dewy: Dewy;

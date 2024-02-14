@@ -1,5 +1,5 @@
 {
-  "name": "dewy_langchain",
+  "name": "dewy-langchain",
   "version": "0.0.2",
   "description": "Langchain integrations for Dewy",
   "private": false,
@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@scarf/scarf": "^1.3.0",
-    "dewy_ts": "^0.1",
+    "dewy-ts": "^0.1",
     "langchain": "^0.1"
   },
   "devDependencies": {
