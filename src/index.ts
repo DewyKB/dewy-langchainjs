@@ -8,22 +8,22 @@ import {
   
   export interface DewyRetrieverInput extends BaseRetrieverInput {
     dewy: Dewy;
-    collection_id: number;
+    collection: string;
     n?: number;
   }
   
   export class DewyRetriever extends BaseRetriever {
     lc_namespace: string[] = [];
     dewy: Dewy;
-    collection_id: number;
+    collection: string;
     n: number;
   
     constructor(fields: DewyRetrieverInput) {
       super(fields);
-      const { dewy, collection_id, n, ...rest } = fields;
+      const { dewy, collection, n, ...rest } = fields;
 
       this.dewy = dewy;
-      this.collection_id = collection_id;
+      this.collection = collection;
       this.n = n ?? 10;
     }
   
@@ -31,8 +31,8 @@ import {
       query: string,
       runManager?: CallbackManagerForRetrieverRun
     ): Promise<Document[]> {
-        const context = await this.dewy.default.retrieveChunks({
-            collection_id: this.collection_id,
+        const context = await this.dewy.kb.retrieveChunks({
+            collection: this.collection,
             query: query, 
             n: this.n,
         });
